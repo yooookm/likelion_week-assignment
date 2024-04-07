@@ -20,7 +20,7 @@
 * 작업이 완료되면 `local` 레포지토리로 `commit` 과 `push` 후 `public` 레포지토리의 자신의 브랜치로 `pull request` 를 보내주세요. <br>
   예시: `local 레포지토리.feat-고라이언` -> `public 레포지토리.feat-고라이언`
 * `merge(작업물 병합)`은 운영진에서 일괄 처리할 예정이니 임의로 `merge` 하지 말아주세요.
-## 디렉토리 구조
+### 디렉토리 구조
 각자의 브랜치에서 다음과 같은 구조로 관리해주세요.
 ```
 - likelion-BE-weekly
