@@ -4,8 +4,8 @@ import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 public class Student {
-    private int number;
-    private String name;
+    private final int number;
+    private final String name;
 
     public void getInfo(){
         System.out.println("my name is " + name + ", and my number is " + number);
