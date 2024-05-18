@@ -1,10 +1,11 @@
 package study.likelionbeweekly.week3.service;
 
 import java.util.Objects;
+import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 import study.likelionbeweekly.week3.domain.User;
 
-// 이곳에 서비스 빈을 등록해보세요.
+@Service
 public class UserServiceImpl implements UserService {
 
 	// 이곳에 UserRepository 를 주입 받아 보세요.
