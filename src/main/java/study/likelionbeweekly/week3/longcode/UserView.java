@@ -12,32 +12,32 @@ public class UserView {
     }
 
     public void displayOptions() {
-        System.out.println("1. /joinPage\t2. /loginPage\t3. 종료");
+        System.out.println("1. /joinPage\t2. /loginPage\t3. Exit");
     }
 
     public String promptForId() throws IOException {
-        System.out.print("아이디 입력: ");
+        System.out.print("Enter ID: ");
         return bufferedReader.readLine();
     }
 
     public String promptForPassword() throws IOException {
-        System.out.print("비밀번호 입력: ");
+        System.out.print("Enter password: ");
         return bufferedReader.readLine();
     }
 
     public void showRegistrationSuccess() {
-        System.out.println("회원 가입 완료");
+        System.out.println("Registration successful");
     }
 
     public void showRegistrationError() {
-        System.out.println("중복 아이디 가입");
+        System.out.println("ID already in use");
     }
 
     public void showLoginSuccess(String id) {
-        System.out.println("로그인 성공, 당신의 아이디는 " + id + " 입니다.");
+        System.out.println("Login successful, your ID is " + id + ".");
     }
 
     public void showLoginError() {
-        System.out.println("아이디 또는 비밀번호가 일치하지 않습니다.");
+        System.out.println("ID or password does not match.");
     }
 }
