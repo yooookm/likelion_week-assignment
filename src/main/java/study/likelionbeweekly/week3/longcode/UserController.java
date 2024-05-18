@@ -1,10 +1,8 @@
-package study.likelionbeweekly.week3.longcode.controller;
+package study.likelionbeweekly.week3.longcode;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import study.likelionbeweekly.week3.longcode.repository.UserRepository;
-import study.likelionbeweekly.week3.longcode.view.UserView;
 
 public class UserController {
     private UserRepository userRepository;

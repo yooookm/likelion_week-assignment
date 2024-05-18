@@ -1,4 +1,4 @@
-package study.likelionbeweekly.week3.longcode.view;
+package study.likelionbeweekly.week3.longcode;
 
 import java.io.BufferedReader;
 import java.io.IOException;

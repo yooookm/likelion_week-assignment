@@ -1,15 +1,15 @@
-package study.likelionbeweekly.week3.longcode.repository;
+package study.likelionbeweekly.week3.longcode;
 
 import java.util.HashMap;
 import java.util.Map;
-import study.likelionbeweekly.week3.longcode.model.User;
 
 public class UserRepository {
     private static final Map<String, User> users = new HashMap<>();
 
     public boolean save(String id, String pw) {
-        if (checkUserExist(id))
+        if (checkUserExist(id)) {
             return false;
+        }
 
         User newUser = new User(id, pw);
         addUser(id, newUser);
