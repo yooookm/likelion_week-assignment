@@ -9,11 +9,10 @@ public class User {
         this.password = password;
     }
 
-    public String getId() {
-        return id;
-    }
-
-    public String getPassword() {
-        return password;
+    public boolean checkSameUser(String userId, String userPw) {
+        if (id.equals(userId) && password.equals(userPw)) {
+            return true;
+        }
+        return false;
     }
 }
