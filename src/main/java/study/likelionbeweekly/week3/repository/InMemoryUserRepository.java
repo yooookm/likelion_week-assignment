@@ -2,9 +2,11 @@ package study.likelionbeweekly.week3.repository;
 
 import java.util.HashMap;
 import java.util.Map;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
 import study.likelionbeweekly.week3.domain.User;
 
+@Slf4j
 @Repository
 public class InMemoryUserRepository implements UserRepository {
 
@@ -17,6 +19,8 @@ public class InMemoryUserRepository implements UserRepository {
         final String id = user.getId();
         // DB 추가
         users.put(id, user);
+        log.info("회원가입이 성공적으로 완료되었습니다. 아이디는 {}입니다", id);
+
     }
 
     @Override

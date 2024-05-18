@@ -1,11 +1,13 @@
 package study.likelionbeweekly.week3.service;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 import study.likelionbeweekly.week3.domain.User;
 import study.likelionbeweekly.week3.repository.UserRepository;
 
+@Slf4j
 @Service
 public class UserServiceImpl implements UserService {
 
@@ -28,6 +30,7 @@ public class UserServiceImpl implements UserService {
         if (user == null) {
             return new User(id, password);
         }
+        log.error("이미 존재하는 사용자입니다");
         throw new IllegalStateException("아이디 중복");
     }
 
@@ -45,6 +48,7 @@ public class UserServiceImpl implements UserService {
             model.addAttribute("id", id);
             return user;
         }
+        log.error("아이디와 비밀번호가 일치하지 않습니다.");
         throw new IllegalStateException("로그인 실패");
     }
 }
