@@ -30,8 +30,7 @@ public class UserController {
     @PostMapping("/join")
     public String join(@RequestParam("id") String id,
                        @RequestParam("password") String password) {
-
-        // 이곳에 userService.saveUser 에 id와 password 를 전달해서 User 를 저장해보세요.
+        userService.saveUser(id, password);
         return "signIn";
     }
 
@@ -39,8 +38,7 @@ public class UserController {
     @PostMapping("/login")
     public String login(@RequestParam("id") String id,
                         @RequestParam("password") String password, Model model) {
-
-        // 이곳에 userService.login 에 id, password 그리고 model 을 전달해서 로그인해보세요.
+        userService.login(id, password, model);
         return "info";
     }
 }
