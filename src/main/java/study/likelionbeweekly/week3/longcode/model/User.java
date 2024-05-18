@@ -1,4 +1,4 @@
-package study.likelionbeweekly.week3.longcode;
+package study.likelionbeweekly.week3.longcode.model;
 
 public class User {
     private String id;
