@@ -12,7 +12,7 @@ public class UserView {
     }
 
     public int displayOptions() throws IOException {
-        System.out.println("1. /joinPage\t2. /loginPage\t3. Exit");
+        System.out.println("1. /joinPgage\t2. /loginPage\t3. Exit");
         int number = Integer.parseInt(bufferedReader.readLine());
         return number;
     }
