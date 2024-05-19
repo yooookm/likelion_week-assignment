@@ -11,8 +11,10 @@ public class UserView {
         this.bufferedReader = new BufferedReader(new InputStreamReader(System.in));
     }
 
-    public void displayOptions() {
+    public int displayOptions() throws IOException {
         System.out.println("1. /joinPage\t2. /loginPage\t3. Exit");
+        int number = Integer.parseInt(bufferedReader.readLine());
+        return number;
     }
 
     public String promptForId() throws IOException {

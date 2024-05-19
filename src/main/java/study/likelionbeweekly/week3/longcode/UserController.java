@@ -1,25 +1,21 @@
 package study.likelionbeweekly.week3.longcode;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 public class UserController {
     private UserRepository userRepository;
     private UserView userView;
-    private BufferedReader bufferedReader;
 
     public UserController(UserRepository userRepository, UserView userView) {
         this.userRepository = userRepository;
         this.userView = userView;
-        this.bufferedReader = new BufferedReader(new InputStreamReader(System.in));
     }
 
     public void processUserRequest() throws IOException {
         int number;
         do {
-            userView.displayOptions();
-            number = Integer.parseInt(bufferedReader.readLine());
+
+            number = userView.displayOptions();
             switch (number) {
                 case 1:
                     register();
