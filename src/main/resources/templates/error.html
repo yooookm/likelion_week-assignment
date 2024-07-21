@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Error Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #d32f2f;
+        }
+
+        p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>오류 발생</h1>
+    <p>IllegalStateException 오류가 발생했습니다.</p>
+    <p><strong>Error Details:</strong> <span th:text="${error}">Unknown error</span></p>
+    <p>오류 문의는 멋사 백엔드 운영진에게 주세요</p>
+</div>
+</body>
+</html>
